@@ -3,15 +3,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <div className="sticky top-0 z-50 site-grid-container content-wrapper heading pt-[90px] text-black uppercase invert-text">
-        <p className="col-span-7">
-          Software
-          <br />
-          Engineer
-        </p>
-        <h1 className="col-span-3">Ajax Abernathy</h1>
-        <p className="col-span-2 place-self-end w-[46%]">(239) 404-9052</p>
-      </div>
       <section className="text-black uppercase pt-[145px]">
         <div className="site-grid-container content-wrapper body">
           <div className="col-span-7">
@@ -56,61 +47,7 @@ export default function Home() {
         </div>
       </section>
       <section className="text-black w-full pt-[145px]">
-        <h2 className="content-wrapper heading-serif">Skills & Services</h2>
-        <div className="site-grid-container content-wrapper body">
-          <div className="col-span-7">
-            <div className="flex">
-              <div className="w-1/2 flex flex-col">
-                <p className="mb-6 uppercase">[Languages]</p>
-                <ul>
-                  <li>TypeScript</li>
-                  <li>JavaScript (ES6+)</li>
-                  <li>HTML5</li>
-                  <li>CSS</li>
-                  <li>SQL</li>
-                  <li>GraphQL</li>
-                  <li>Shell/CLI</li>
-                </ul>
-              </div>
-              <div className="w-1/2 flex flex-col">
-                <p className="mb-6 uppercase">[Frameworks]</p>
-                <ul>
-                  <li>React</li>
-                  <li>Next.js</li>
-                  <li>Redux</li>
-                  <li>Tailwind CSS</li>
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>Jest</li>
-                  <li>Cypress</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="col-span-5">
-            <div className="flex flex-col">
-              <p className="mb-6 uppercase">[Technologies]</p>
-              <ul>
-                <li>Figma</li>
-                <li>CMS (Directus, Sanity, Strapi)</li>
-                <li>Webpack</li>
-                <li>Turbopack</li>
-                <li>Vercel</li>
-                <li>AWS (Lambda, EC2, DynamoDB, S3)</li>
-                <li>DigitalOcean (Droplets, App Platform)</li>
-                <li>NoSQL Databases</li>
-                <li>REST</li>
-                <li>Docker</li>
-                <li>Kubernetes</li>
-                <li>CI/CD</li>
-                <li>PostHog</li>
-                <li>Google Analytics</li>
-                <li>Twilio SendGrid</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="h-[1200px]"></div>
+        <h2 className="content-wrapper heading-serif">Coming soon...</h2>
       </section>
     </main>
   );
