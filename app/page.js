@@ -1,4 +1,4 @@
-import Image from "next/image";
+import CaseStudy from "./components/CaseStudy";
 
 export default function Home() {
   return (
@@ -110,8 +110,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="h-[1200px]"></div>
       </section>
+      <CaseStudy />
     </main>
   );
 }

@@ -28,6 +28,10 @@ li {
   font-family: var(--font-serif);
 }
 
+.font-mono {
+  font-family: var(--font-mono);
+}
+
 .heading {
   @apply text-[26px] leading-[28px];
 }
