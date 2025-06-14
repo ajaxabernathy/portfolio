@@ -15,9 +15,38 @@ a {
   text-decoration: underline;
 }
 
+li {
+  margin-bottom: 2px;
+}
+
+.invert-text {
+  mix-blend-mode: difference;
+  color: var(--color-white);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.heading {
+  @apply text-[26px] leading-[28px];
+}
+
+.heading-serif {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  text-decoration: underline;
+  margin-bottom: 2.5rem;
+}
+
+.body {
+  @apply text-[18px] leading-[22px];
+}
+
 .content-wrapper {
   padding-left: 127px;
-  padding-right: 60px;
+  padding-right: 78px;
+  max-width: 1920px;
 }
 
 .site-grid-container {

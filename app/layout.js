@@ -27,6 +27,17 @@ const haas = localFont({
   ],
 });
 
+const serif = localFont({
+  src: [
+    {
+      path: "../public/fonts/georgia.woff2",
+      weight: "400",
+      style: "normal",
+      variable: "--font-serif",
+    },
+  ],
+});
+
 export const metadata = {
   title: "Ajax Abernathy",
   description: "Portfolio site for Ajax Abernathy",
@@ -35,7 +46,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${haas.className}  antialiased`}>
+      <body className={`${haas.className} ${serif.variable}  antialiased`}>
         {children}
         <Footer />
       </body>

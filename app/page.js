@@ -3,22 +3,24 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <section className="text-black uppercase">
-        <div className="site-grid-container content-wrapper pt-[90px] mb-[145px] text-[26px] leading-[28px]">
-          <p className="col-span-7">
-            Software
-            <br />
-            developer
-          </p>
-          <p className="col-span-4">Ajax Abernathy</p>
-          <p>(239) 404-9052</p>
-        </div>
-        <div className="site-grid-container content-wrapper mb-[145px] text-[18px] leading-[22px]">
+      <div className="sticky top-0 z-50 site-grid-container content-wrapper heading pt-[90px] text-black uppercase invert-text">
+        <p className="col-span-7">
+          Software
+          <br />
+          Engineer
+        </p>
+        <h1 className="col-span-3">Ajax Abernathy</h1>
+        <p className="col-span-2 place-self-end w-[46%]">(239) 404-9052</p>
+      </div>
+      <section className="text-black uppercase pt-[145px]">
+        <div className="site-grid-container content-wrapper body">
           <div className="col-span-7">
             <p className="mb-6 w-[70%]">
-              Full stack software engineer building things for screens,
-              balancing functionality and aesthetics. Lorem upasfdkklhnaslk
-              aslkas dj alk alksjd asl lkasdj.
+              Full stack software engineer building things for
+              screens—balancing&nbsp;functionality and aesthetics with a bias
+              toward simplicity.
+              <br />I partner with designers to build thoughtful, brand-aligned
+              websites&nbsp;that&nbsp;perform.
             </p>
             <p>
               Currently: Full Stack Developer at{" "}
@@ -30,7 +32,7 @@ export default function Home() {
             <div className="flex">
               <div className="w-1/2 flex flex-col">
                 <p className="mb-6">[Contact]</p>
-                <p className="mb-1">(239) 404-9052</p>
+                <p>(239) 404-9052</p>
                 <a
                   href="mailto:ajaxabernathy@gmail.com"
                   className="lowercase mb-1"
@@ -53,8 +55,62 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="text-black">
-        <div className="site-grid-container content-wrapper pt-[90px] mb-[145px] text-[26px] leading-[28px]"></div>
+      <section className="text-black w-full pt-[145px]">
+        <h2 className="content-wrapper heading-serif">Skills & Services</h2>
+        <div className="site-grid-container content-wrapper body">
+          <div className="col-span-7">
+            <div className="flex">
+              <div className="w-1/2 flex flex-col">
+                <p className="mb-6 uppercase">[Languages]</p>
+                <ul>
+                  <li>TypeScript</li>
+                  <li>JavaScript (ES6+)</li>
+                  <li>HTML5</li>
+                  <li>CSS</li>
+                  <li>SQL</li>
+                  <li>GraphQL</li>
+                  <li>Shell/CLI</li>
+                </ul>
+              </div>
+              <div className="w-1/2 flex flex-col">
+                <p className="mb-6 uppercase">[Frameworks]</p>
+                <ul>
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>Redux</li>
+                  <li>Tailwind CSS</li>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>Jest</li>
+                  <li>Cypress</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="col-span-5">
+            <div className="flex flex-col">
+              <p className="mb-6 uppercase">[Technologies]</p>
+              <ul>
+                <li>Figma</li>
+                <li>CMS (Directus, Sanity, Strapi)</li>
+                <li>Webpack</li>
+                <li>Turbopack</li>
+                <li>Vercel</li>
+                <li>AWS (Lambda, EC2, DynamoDB, S3)</li>
+                <li>DigitalOcean (Droplets, App Platform)</li>
+                <li>NoSQL Databases</li>
+                <li>REST</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>CI/CD</li>
+                <li>PostHog</li>
+                <li>Google Analytics</li>
+                <li>Twilio SendGrid</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="h-[1200px]"></div>
       </section>
     </main>
   );
