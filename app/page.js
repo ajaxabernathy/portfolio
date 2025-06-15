@@ -4,12 +4,13 @@ export default function Home() {
   return (
     <main>
       <div className="sticky top-0 z-50 site-grid-container content-wrapper heading pt-[90px] text-black uppercase invert-text">
-        <p className="col-span-7">
+        <p className="col-span-7">Ajax Abernathy</p>
+        <h1 className="col-span-3">
+          {" "}
           Software
           <br />
           Engineer
-        </p>
-        <h1 className="col-span-3">Ajax Abernathy</h1>
+        </h1>
         <p className="col-span-2 place-self-end w-[46%]">(239) 404-9052</p>
       </div>
       <section className="text-black uppercase pt-[145px]">
@@ -32,7 +33,7 @@ export default function Home() {
             <div className="flex">
               <div className="w-1/2 flex flex-col">
                 <p className="mb-6">[Contact]</p>
-                <p>(239) 404-9052</p>
+
                 <a
                   href="mailto:ajaxabernathy@gmail.com"
                   className="lowercase mb-1"

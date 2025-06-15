@@ -9,7 +9,7 @@ const studies = [
     img: "/sylvain.jpg",
   },
   {
-    title: "Xumo",
+    title: "xumo.com",
     about: "About",
     link: "https://xumo.com",
     img: "/xumo.jpg",
@@ -23,13 +23,13 @@ const studies = [
   {
     title: "HeadFirst from Philadelphia Union",
     about: "About",
-    link: "https://impact.sylvain.co/2025",
+    link: "https://myheadfirst.org",
     img: "/puf.jpg",
   },
   {
     title: "Peacock Summer Olympics Coverage 2024",
     about: "About",
-    link: "https://https://peacock-olympics.vercel.app/",
+    link: "https://peacock-olympics.vercel.app/",
     img: "/peacock.jpg",
   },
   {
@@ -41,7 +41,7 @@ const studies = [
   {
     title: "Xfinity Brand Hub",
     about: "About",
-    link: "https://https://brand.xfinity.com/",
+    link: "https://brand.xfinity.com/",
     img: "/xbh.jpg",
   },
 ];
@@ -50,31 +50,36 @@ const CaseStudy = () => {
   return (
     <section className="text-black w-full pt-[145px]">
       <div className="content-wrapper">
-        {studies.map((study, i) => {
-          return (
-            <div key={"case_study_" + i} className="mb-24">
-              <h3 className="heading-serif col-span-5">{study.title}</h3>
-              <div className="site-grid-container">
-                <div className="col-span-5">
-                  <p className="mb-16">About</p>
-                  <Button label={"Live Site"} href={study.link} />
+        <h2 className="heading-serif">Work</h2>
+      </div>
+
+      <div className="site-grid-container content-wrapper body">
+        {/* This matches col-span-7, like the left side of Skills & Services */}
+        <div className="col-span-7 grid grid-cols-12">
+          {studies.map((study, i) => (
+            <div key={"case_study_" + i} className="col-span-6">
+              <div className="flex flex-col gap-8 mb-24">
+                <p className="uppercase -mb-4">[{`0${i + 1}`}]</p>
+
+                <div className="relative w-[90%] h-auto">
+                  <Image
+                    src={study.img}
+                    alt={study.title}
+                    width={500}
+                    height={282}
+                  />
                 </div>
 
-                <div className="col-span-7">
-                  <div className="relative w-full h-auto">
-                    <Image
-                      src={study.img}
-                      alt={study.title}
-                      width={1000}
-                      height={563}
-                      //   className="object-contain"
-                    />
-                  </div>
-                </div>
+                <p>{study.title}</p>
+                <p>{study.about}</p>
+                <Button label={"Live Site"} href={study.link} />
               </div>
             </div>
-          );
-        })}
+          ))}
+        </div>
+
+        {/* Empty spacer or future content (to match col-span-5 in the original layout) */}
+        {/* <div className="col-span-5"></div> */}
       </div>
     </section>
   );
