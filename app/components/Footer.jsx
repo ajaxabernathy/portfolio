@@ -2,8 +2,8 @@ import Ajax from "./Ajax";
 
 const Footer = () => {
   return (
-    <footer className="w-full h-auto bg-black p-[20px]">
-      <div className="padding-x">
+    <footer className="w-full h-auto bg-black">
+      <div className="">
         <Ajax />
       </div>
     </footer>

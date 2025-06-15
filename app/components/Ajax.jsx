@@ -5,7 +5,7 @@ import AjaxGroup from "./svg/AjaxGroup";
 
 const Ajax = () => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full p-[20px]">
       {/* Inner Layer */}
       {/* <div className="absolute bottom-0 w-full h-full z-10">
         <AjaxInner color="#d3493a" />

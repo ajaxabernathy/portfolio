@@ -3,7 +3,7 @@ import CaseStudy from "./components/CaseStudy";
 export default function Home() {
   return (
     <main>
-      <div className="sticky top-0 z-50 site-grid-container content-wrapper heading pt-[90px] text-black uppercase invert-text">
+      <div className="sticky top-0 z-50 site-grid-container content-wrapper heading mt-[82px] pt-2 text-black uppercase invert-text">
         <p className="col-span-7">Ajax Abernathy</p>
         <h1 className="col-span-3">
           {" "}
