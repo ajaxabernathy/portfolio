@@ -5,10 +5,19 @@
   --color-blue: #72b3fd;
   --color-black: #191919;
   --color-white: #f5f6f4;
+  --color-green: #cafa6d;
+  --breakpoint-lg: 1280px;
+  --breakpoint-md: 768px;
+  --breakpoint-grid-break: 1000px;
+}
+
+html {
+  background-color: var(--color-black);
 }
 
 body {
-  background-color: var(--color-white);
+  background-color: var(--color-black);
+  min-height: 100dvh;
 }
 
 a {
@@ -28,25 +37,24 @@ li {
   font-family: var(--font-serif);
 }
 
+.font-mono {
+  font-family: var(--font-mono);
+}
+
 .heading {
   @apply text-[26px] leading-[28px];
 }
 
 .heading-serif {
-  font-family: var(--font-serif);
-  font-size: 36px;
-  text-decoration: underline;
-  margin-bottom: 2.5rem;
+  @apply font-serif text-[32px] md:text-[36px] underline mb-16 md:mb-[2.5rem];
 }
 
 .body {
-  @apply text-[18px] leading-[22px];
+  @apply text-[16px] md:text-[18px] leading-[22px];
 }
 
 .content-wrapper {
-  padding-left: 127px;
-  padding-right: 78px;
-  max-width: 1920px;
+  @apply p-[20px] lg:pl-[127px] lg:pr-[78px] max-w-[1920px];
 }
 
 .site-grid-container {
@@ -56,7 +64,7 @@ li {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .site-grid-container {
     -moz-column-gap: 2rem;
     column-gap: 2rem;

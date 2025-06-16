@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { Cousine } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
 
@@ -38,15 +39,43 @@ const serif = localFont({
   ],
 });
 
+const mono = Cousine({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-mono",
+});
+
 export const metadata = {
   title: "Ajax Abernathy",
-  description: "Portfolio site for Ajax Abernathy",
+  description: "Full Stack Engineer",
+  openGraph: {
+    title: "Ajax Abernathy",
+    description: "Full Stack Engineer",
+    url: "https://ajaxabernathy.com",
+    siteName: "Ajax Abernathy",
+    images: [
+      {
+        url: "https://ajaxabernathy.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ajax Abernathy",
+    description: "Full Stack Engineer",
+    images: ["https://ajaxabernathy.com/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${haas.className} ${serif.variable}  antialiased`}>
+      <body
+        className={`${haas.className} ${serif.variable} ${mono.variable}  antialiased`}
+      >
         {children}
         <Footer />
       </body>
