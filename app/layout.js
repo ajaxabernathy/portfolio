@@ -47,7 +47,27 @@ const mono = Cousine({
 
 export const metadata = {
   title: "Ajax Abernathy",
-  description: "Portfolio site for Ajax Abernathy",
+  description: "Full Stack Engineer",
+  openGraph: {
+    title: "Ajax Abernathy",
+    description: "Full Stack Engineer",
+    url: "https://ajaxabernathy.com",
+    siteName: "Ajax Abernathy",
+    images: [
+      {
+        url: "https://ajaxabernathy.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ajax Abernathy",
+    description: "Full Stack Engineer",
+    images: ["https://ajaxabernathy.com/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({ children }) {

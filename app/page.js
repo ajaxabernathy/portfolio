@@ -22,7 +22,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <section className="text-white uppercase mt-[calc(100vh-700px)] grid-break:mt-[calc(100vh-500px)]">
+      <section className="text-white uppercase mt-[calc(100dvh-446px)] grid-break:mt-[calc(100vh-500px)]">
         <div className="site-grid-container content-wrapper body">
           <div className="col-span-6">
             <p className="mb-12 md:mb-6 md:w-[80%] grid-break:w-[80%] font-light">

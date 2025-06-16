@@ -66,7 +66,7 @@ const CaseStudy = () => {
                 className="shadow-lg"
               />
             </div>
-            <p>{study.title}</p>
+            <p className="-mt-4">{study.title}</p>
             {/* <p className="font-light">{study.about}</p> */}
             <Button label="Live Site" href={study.link} />
           </div>
