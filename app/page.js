@@ -2,37 +2,47 @@ import CaseStudy from "./components/CaseStudy";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center">
-      <div className="w-full sticky top-0 z-50 site-grid-container content-wrapper heading mt-[82px] pt-2 text-white uppercase invert-text">
-        <p className="col-span-6">Ajax Abernathy</p>
-        <h1 className="col-span-6">
-          Software
+    <main className="flex flex-col items-center h-100dvh">
+      <div className="w-full sticky top-0 z-50 site-grid-container content-wrapper heading mt-[2rem] md:mt-[6rem] pt-2 text-white uppercase invert-text">
+        <p className="col-span-3 grid-break:col-span-6">
+          Ajax
           <br />
-          Engineer
-        </h1>
-        {/* <p className="col-span-2 place-self-end w-[46%]">(239) 404-9052</p> */}
+          Abernathy
+        </p>
+        <div className="col-span-3 grid-break:col-span-6 grid md:grid-cols-2">
+          <h1 className="mb-6">
+            Software
+            <br />
+            Engineer
+          </h1>
+          <p className="">
+            (239)
+            <br />
+            404-9052
+          </p>
+        </div>
       </div>
-      <section className="text-white uppercase pt-[145px]">
+      <section className="text-white uppercase mt-[14rem]">
         <div className="site-grid-container content-wrapper body">
           <div className="col-span-6">
-            <p className="mb-6 w-[70%]">
-              Full stack software engineer building things for
-              screens—balancing&nbsp;functionality and aesthetics with a bias
-              toward simplicity. I partner with designers to build thoughtful,
-              brand-aligned websites&nbsp;that&nbsp;perform.
+            <p className="mb-12 md:mb-6 md:w-[80%] grid-break:w-[80%] font-light">
+              Full stack software engineer building things for screens—balancing
+              functionality and aesthetics with a bias toward simplicity. I
+              partner with designers to build thoughtful, brand-aligned
+              websites&nbsp;that&nbsp;perform.
             </p>
             <p>
               <span className="font-light">Currently:</span> Full Stack
               Developer at <a href="https://modworldwide.com">MOD</a>
             </p>
-            <p>
+            <p className="mb-12">
               <span className="font-light">Available for:</span> freelance
             </p>
           </div>
           <div className="col-span-6">
-            <div className="flex">
+            <div className="flex flex-col md:flex-row">
               <div className="w-1/2 flex flex-col">
-                <p className="mb-6">[Contact]</p>
+                <p className="mb-2 md:mb-6">[Contact]</p>
 
                 <a
                   href="mailto:ajaxabernathy@gmail.com"
@@ -40,7 +50,7 @@ export default function Home() {
                 >
                   ajaxabernathy@gmail.com
                 </a>
-                <p>
+                <p className="mb-6">
                   <a href="https://www.linkedin.com/in/ajax-abernathy/">
                     LinkedIn
                   </a>{" "}
@@ -48,7 +58,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="w-1/2 flex flex-col">
-                <p className="mb-6">[Education]</p>
+                <p className="mb-2 md:mb-6">[Education]</p>
                 <p className="normal-case">The City College of New York</p>
                 <p className="normal-case">BFA Audio Technology, 2015</p>
               </div>
@@ -56,7 +66,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="text-white w-full content-wrapper pt-[14rem]">
+      <section className="text-white w-full content-wrapper mt-[8rem] md:mt-[14rem]">
         <div className="site-grid-container body">
           <h2 className=" heading-serif col-span-6">Skills & Services</h2>
           <div className="col-span-6">

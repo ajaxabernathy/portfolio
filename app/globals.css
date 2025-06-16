@@ -6,6 +6,14 @@
   --color-black: #191919;
   --color-white: #f5f6f4;
   --color-green: #cafa6d;
+  --breakpoint-lg: 1280px;
+  --breakpoint-md: 768px;
+  --breakpoint-grid-break: 1000px;
+}
+
+html {
+  background-color: var(--color-black);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -49,9 +57,7 @@ li {
 }
 
 .content-wrapper {
-  padding-left: 127px;
-  padding-right: 78px;
-  max-width: 1920px;
+  @apply p-[20px] lg:pl-[127px] lg:pr-[78px] max-w-[1920px];
 }
 
 .site-grid-container {
@@ -61,7 +67,7 @@ li {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .site-grid-container {
     -moz-column-gap: 2rem;
     column-gap: 2rem;
