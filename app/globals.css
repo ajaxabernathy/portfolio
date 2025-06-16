@@ -13,11 +13,11 @@
 
 html {
   background-color: var(--color-black);
-  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--color-black);
+  min-height: 100dvh;
 }
 
 a {
@@ -46,10 +46,7 @@ li {
 }
 
 .heading-serif {
-  font-family: var(--font-serif);
-  font-size: 36px;
-  text-decoration: underline;
-  margin-bottom: 2.5rem;
+  @apply font-serif text-[36px] underline mb-16 md:mb-[2.5rem];
 }
 
 .body {

@@ -2,7 +2,7 @@ import CaseStudy from "./components/CaseStudy";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center h-100dvh">
+    <main className="flex flex-col items-center">
       <div className="w-full sticky top-0 z-50 site-grid-container content-wrapper heading mt-[2rem] md:mt-[6rem] pt-2 text-white uppercase invert-text">
         <p className="col-span-3 grid-break:col-span-6">
           Ajax
@@ -15,14 +15,14 @@ export default function Home() {
             <br />
             Engineer
           </h1>
-          <p className="">
+          <p className="hidden md:block">
             (239)
             <br />
             404-9052
           </p>
         </div>
       </div>
-      <section className="text-white uppercase mt-[14rem]">
+      <section className="text-white uppercase mt-[calc(100vh-700px)] grid-break:mt-[calc(100vh-500px)]">
         <div className="site-grid-container content-wrapper body">
           <div className="col-span-6">
             <p className="mb-12 md:mb-6 md:w-[80%] grid-break:w-[80%] font-light">
