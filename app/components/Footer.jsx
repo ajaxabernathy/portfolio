@@ -2,10 +2,8 @@ import Ajax from "./Ajax";
 
 const Footer = () => {
   return (
-    <footer className="w-full h-auto bg-black">
-      <div className="">
-        <Ajax />
-      </div>
+    <footer className="flex justify-center">
+      <Ajax />
     </footer>
   );
 };

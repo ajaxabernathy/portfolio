@@ -6,7 +6,7 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 gsap.registerPlugin(MotionPathPlugin);
 
-const AjaxGroup = ({ color = "#d3493a" }) => {
+const AjaxGroup = ({ color }) => {
   const dotRef = useRef(null);
   const pathRef = useRef(null);
 
@@ -31,7 +31,7 @@ const AjaxGroup = ({ color = "#d3493a" }) => {
       viewBox="0 0 1400 420"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-full h-[20%] mt-6 pt-6"
+      className="w-full h-full"
       style={{ overflow: "visible" }}
     >
       <path
@@ -53,10 +53,10 @@ const AjaxGroup = ({ color = "#d3493a" }) => {
 
       <circle
         ref={dotRef}
-        r="5"
+        r="6"
         fill={color}
         style={{
-          filter: "drop-shadow(0 0 10px #72b3fd)",
+          filter: "drop-shadow(0 0 16px #72b3fd) drop-shadow(0 0 8px #72b3fd)",
         }}
       />
     </svg>

@@ -48,12 +48,12 @@ const studies = [
 
 const CaseStudy = () => {
   return (
-    <section className="text-black w-full pt-[145px]">
-      <div className="content-wrapper">
+    <section className="content-wrapper text-white w-full pt-[145px]">
+      <div className="">
         <h2 className="heading-serif">Work</h2>
       </div>
 
-      <div className="site-grid-container content-wrapper body">
+      <div className="site-grid-container body">
         {/* 1–2 Left */}
         <div className="col-span-7 flex">
           <div className="w-1/2 pr-4">

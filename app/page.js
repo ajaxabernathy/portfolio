@@ -2,8 +2,8 @@ import CaseStudy from "./components/CaseStudy";
 
 export default function Home() {
   return (
-    <main>
-      <div className="sticky top-0 z-50 site-grid-container content-wrapper heading mt-[82px] pt-2 text-black uppercase invert-text">
+    <main className="flex flex-col items-center">
+      <div className="w-full sticky top-0 z-50 site-grid-container content-wrapper heading mt-[82px] pt-2 text-white uppercase invert-text">
         <p className="col-span-7">Ajax Abernathy</p>
         <h1 className="col-span-3">
           {" "}
@@ -13,7 +13,7 @@ export default function Home() {
         </h1>
         <p className="col-span-2 place-self-end w-[46%]">(239) 404-9052</p>
       </div>
-      <section className="text-black uppercase pt-[145px]">
+      <section className="text-white uppercase pt-[145px]">
         <div className="site-grid-container content-wrapper body">
           <div className="col-span-7">
             <p className="mb-6 w-[70%]">
@@ -56,9 +56,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="text-black w-full pt-[145px]">
-        <h2 className="content-wrapper heading-serif">Skills & Services</h2>
-        <div className="site-grid-container content-wrapper body">
+      <section className="text-white w-full content-wrapper pt-[145px]">
+        <h2 className=" heading-serif">Skills & Services</h2>
+        <div className="site-grid-container body">
           <div className="col-span-7">
             <div className="flex">
               <div className="w-1/2 flex flex-col">

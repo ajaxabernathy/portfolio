@@ -20,7 +20,7 @@ const Ajax = () => {
       </div> */}
 
       <div className="z-10">
-        <AjaxGroup color="#d3493a" />
+        <AjaxGroup color="#f5f6f4" />
       </div>
     </div>
   );
