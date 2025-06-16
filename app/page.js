@@ -33,7 +33,10 @@ export default function Home() {
             </p>
             <p>
               <span className="font-light">Currently:</span> Full Stack
-              Developer at <a href="https://modworldwide.com">MOD</a>
+              Developer at{" "}
+              <a href="https://modworldwide.com" className="hover:text-red">
+                MOD
+              </a>
             </p>
             <p className="mb-12">
               <span className="font-light">Available for:</span> freelance
@@ -46,15 +49,24 @@ export default function Home() {
 
                 <a
                   href="mailto:ajaxabernathy@gmail.com"
-                  className="lowercase mb-1"
+                  className="lowercase mb-1 hover:text-red w-fit"
                 >
                   ajaxabernathy@gmail.com
                 </a>
                 <p className="mb-6">
-                  <a href="https://www.linkedin.com/in/ajax-abernathy/">
+                  <a
+                    href="https://www.linkedin.com/in/ajax-abernathy/"
+                    className="hover:text-red"
+                  >
                     LinkedIn
                   </a>{" "}
-                  | <a href="https://github.com/ajaxabernathy">GitHub</a>
+                  |{" "}
+                  <a
+                    href="https://github.com/ajaxabernathy"
+                    className="hover:text-red"
+                  >
+                    GitHub
+                  </a>
                 </p>
               </div>
               <div className="w-1/2 flex flex-col">
