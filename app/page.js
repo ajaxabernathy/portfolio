@@ -4,32 +4,32 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center">
       <div className="w-full sticky top-0 z-50 site-grid-container content-wrapper heading mt-[82px] pt-2 text-white uppercase invert-text">
-        <p className="col-span-7">Ajax Abernathy</p>
-        <h1 className="col-span-3">
-          {" "}
+        <p className="col-span-6">Ajax Abernathy</p>
+        <h1 className="col-span-6">
           Software
           <br />
           Engineer
         </h1>
-        <p className="col-span-2 place-self-end w-[46%]">(239) 404-9052</p>
+        {/* <p className="col-span-2 place-self-end w-[46%]">(239) 404-9052</p> */}
       </div>
       <section className="text-white uppercase pt-[145px]">
         <div className="site-grid-container content-wrapper body">
-          <div className="col-span-7">
+          <div className="col-span-6">
             <p className="mb-6 w-[70%]">
               Full stack software engineer building things for
               screens—balancing&nbsp;functionality and aesthetics with a bias
-              toward simplicity.
-              <br />I partner with designers to build thoughtful, brand-aligned
-              websites&nbsp;that&nbsp;perform.
+              toward simplicity. I partner with designers to build thoughtful,
+              brand-aligned websites&nbsp;that&nbsp;perform.
             </p>
             <p>
-              Currently: Full Stack Developer at{" "}
-              <a href="https://modworldwide.com">MOD</a>
+              <span className="font-light">Currently:</span> Full Stack
+              Developer at <a href="https://modworldwide.com">MOD</a>
             </p>
-            <p>Available for: freelance</p>
+            <p>
+              <span className="font-light">Available for:</span> freelance
+            </p>
           </div>
-          <div className="col-span-5">
+          <div className="col-span-6">
             <div className="flex">
               <div className="w-1/2 flex flex-col">
                 <p className="mb-6">[Contact]</p>
@@ -56,14 +56,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="text-white w-full content-wrapper pt-[145px]">
-        <h2 className=" heading-serif">Skills & Services</h2>
+      <section className="text-white w-full content-wrapper pt-[14rem]">
         <div className="site-grid-container body">
-          <div className="col-span-7">
+          <h2 className=" heading-serif col-span-6">Skills & Services</h2>
+          <div className="col-span-6">
             <div className="flex">
               <div className="w-1/2 flex flex-col">
                 <p className="mb-6 uppercase">[Languages]</p>
-                <ul>
+                <ul className="mb-18">
                   <li>TypeScript</li>
                   <li>JavaScript (ES6+)</li>
                   <li>HTML5</li>
@@ -87,8 +87,6 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-          </div>
-          <div className="col-span-5">
             <div className="flex flex-col">
               <p className="mb-6 uppercase">[Technologies]</p>
               <ul>
