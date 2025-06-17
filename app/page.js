@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center">
       <div className="w-full sticky top-0 z-50 site-grid-container content-wrapper heading mt-[2rem] md:mt-[6rem] pt-2 text-white uppercase invert-text">
-        <a
+        <Link
           href="/"
           className="col-span-3 grid-break:col-span-6"
           style={{ textDecoration: "none" }}
@@ -12,7 +12,7 @@ export default function Home() {
           Ajax
           <br />
           Abernathy
-        </a>
+        </Link>
         <div className="col-span-3 grid-break:col-span-6 grid md:grid-cols-2">
           <h1 className="mb-6">
             Software
