@@ -81,7 +81,7 @@ const CaseStudy = () => {
           <h2 className="heading-serif">Work</h2>
           <button
             onClick={handleCat}
-            className="m-[12rem] size-32 cursor-pointer"
+            className="absolute grid-break:static right-16 -top-32 grid-break:m-[12rem] size-24 md:size-32 cursor-pointer"
           >
             <div className="rotate-12" ref={catRef}>
               <Cat />

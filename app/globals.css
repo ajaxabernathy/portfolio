@@ -54,7 +54,7 @@ li {
 }
 
 .content-wrapper {
-  @apply p-[20px] lg:pl-[127px] lg:pr-[78px] max-w-[1920px];
+  @apply p-[10px] md:p-[20px] lg:pl-[127px] lg:pr-[78px] max-w-[1920px];
 }
 
 .site-grid-container {

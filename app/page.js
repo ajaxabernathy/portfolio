@@ -26,7 +26,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <section className="text-white uppercase mt-[calc(100dvh-446px)] grid-break:mt-[calc(100vh-500px)]">
+      <section className="text-white uppercase mt-[calc(100dvh-400px)] grid-break:mt-[calc(100vh-500px)]">
         <div className="site-grid-container content-wrapper body">
           <div className="col-span-6">
             <p className="mb-12 md:mb-6 md:w-[80%] grid-break:w-[80%] font-light">
@@ -49,7 +49,7 @@ export default function Home() {
           <div className="col-span-6">
             <div className="flex flex-col md:flex-row">
               <div className="w-1/2 flex flex-col">
-                <p className="mb-2 md:mb-6">[Contact]</p>
+                <p className="mt-12 md:mt-0 mb-2 md:mb-6">[Contact]</p>
 
                 <a
                   href="mailto:ajaxabernathy@gmail.com"
@@ -99,7 +99,7 @@ export default function Home() {
                   <li>Shell/CLI</li>
                 </ul>
               </div>
-              <div className="w-1/2 flex flex-col">
+              <div className="w-1/2 flex flex-col pl-2 md:pl-0">
                 <p className="mb-6 uppercase">[Frameworks]</p>
                 <ul>
                   <li>React</li>

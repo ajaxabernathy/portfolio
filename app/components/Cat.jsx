@@ -104,13 +104,13 @@ const CatRender = ({ handleCat }) => {
 
       <button
         onClick={handleCat}
-        className={`absolute top-0 right-24 font-mono w-[5rem] bg-white text-black uppercase text-[16px] tracking-tight px-3 py-1 shadow-md hover:cursor-pointer`}
+        className={`fixed top-24 right-12 font-mono w-[5rem] bg-white text-black uppercase text-[16px] tracking-tight px-3 py-1 shadow-md hover:cursor-pointer`}
       >
         Close
       </button>
 
       <div className="w-screen flex items-center justify-center animate-fade-in">
-        <div className="fixed bottom-48 flex bg-white shadow-md z-20 hover:cursor">
+        <div className="fixed bottom-24 md:bottom-48 flex bg-white shadow-md z-20 hover:cursor">
           {animations.map(({ label, name }) => (
             <button
               key={name}
