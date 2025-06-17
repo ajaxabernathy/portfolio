@@ -1,14 +1,19 @@
 import CaseStudy from "./components/CaseStudy";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center">
       <div className="w-full sticky top-0 z-50 site-grid-container content-wrapper heading mt-[2rem] md:mt-[6rem] pt-2 text-white uppercase invert-text">
-        <p className="col-span-3 grid-break:col-span-6">
+        <Link
+          href="/"
+          className="col-span-3 grid-break:col-span-6"
+          style={{ textDecoration: "none" }}
+        >
           Ajax
           <br />
           Abernathy
-        </p>
+        </Link>
         <div className="col-span-3 grid-break:col-span-6 grid md:grid-cols-2">
           <h1 className="mb-6">
             Software
@@ -22,7 +27,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <section className="text-white uppercase mt-[calc(100dvh-446px)] grid-break:mt-[calc(100vh-500px)]">
+      <section className="text-white uppercase mt-[calc(100dvh-400px)] grid-break:mt-[calc(100vh-500px)]">
         <div className="site-grid-container content-wrapper body">
           <div className="col-span-6">
             <p className="mb-12 md:mb-6 md:w-[80%] grid-break:w-[80%] font-light">
@@ -45,7 +50,7 @@ export default function Home() {
           <div className="col-span-6">
             <div className="flex flex-col md:flex-row">
               <div className="w-1/2 flex flex-col">
-                <p className="mb-2 md:mb-6">[Contact]</p>
+                <p className="mt-12 md:mt-0 mb-2 md:mb-6">[Contact]</p>
 
                 <a
                   href="mailto:ajaxabernathy@gmail.com"
@@ -95,7 +100,7 @@ export default function Home() {
                   <li>Shell/CLI</li>
                 </ul>
               </div>
-              <div className="w-1/2 flex flex-col">
+              <div className="w-1/2 flex flex-col pl-2 md:pl-0">
                 <p className="mb-6 uppercase">[Frameworks]</p>
                 <ul>
                   <li>React</li>

@@ -1,5 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import Button from "./Button";
+import Cat from "./svg/Cat";
+import { useEffect, useRef, useState } from "react";
+import { gsap } from "gsap";
+import CatRender from "./Cat";
 
 const studies = [
   {
@@ -47,31 +53,70 @@ const studies = [
 ];
 
 const CaseStudy = () => {
+  const [showCat, setShowCat] = useState(false);
+
+  const catRef = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline({ repeat: -1, repeatDelay: 3, paused: false });
+
+    tl.to(catRef.current, {
+      rotate: 5,
+      duration: 0.1,
+      yoyo: true,
+      repeat: 3,
+      ease: "power1.inOut",
+      transformOrigin: "center center",
+    });
+  }, []);
+
+  function handleCat() {
+    setShowCat((prev) => !prev);
+  }
+
   return (
-    <section className="site-grid-container content-wrapper body text-white w-full mt-[8rem] md:mt-[14rem]">
-      <h2 className="heading-serif col-span-6">Work</h2>
-      <div className="col-span-6 grid md:grid-cols-2">
-        {studies.map((study, i) => (
-          <div
-            key={"case_study_" + i}
-            className="mb-16 md:mb-24 flex flex-col gap-8 mr-0 md:mr-4 grid-break:mr-0"
+    <section className="relative w-full content-wrapper mt-[8rem] md:mt-[14rem]">
+      <div className="site-grid-container body text-white">
+        <div className="col-span-6">
+          <h2 className="heading-serif">Work</h2>
+          <button
+            onClick={handleCat}
+            className="absolute grid-break:static right-16 -top-32 grid-break:m-[12rem] size-24 md:size-32 cursor-pointer"
           >
-            <p className="uppercase -mb-4">[{`0${i + 1}`}]</p>
-            <div className="w-full grid-break:w-[80%]">
-              <Image
-                src={study.img}
-                alt={study.title}
-                width={768}
-                height={282}
-                className="shadow-lg"
-              />
+            <div className="rotate-12" ref={catRef}>
+              <Cat />
             </div>
-            <p className="-mt-4">{study.title}</p>
-            {/* <p className="font-light">{study.about}</p> */}
-            <Button label="Live Site" href={study.link} />
-          </div>
-        ))}
+            <p className="text-green font-serif uppercase mt-2">Cat!</p>
+          </button>
+        </div>
+        <div className="col-span-6 grid md:grid-cols-2">
+          {studies.map((study, i) => (
+            <div
+              key={"case_study_" + i}
+              className="mb-16 md:mb-24 flex flex-col gap-8 mr-0 md:mr-4 grid-break:mr-0"
+            >
+              <p className="uppercase -mb-4">[{`0${i + 1}`}]</p>
+              <div className="w-full grid-break:w-[80%]">
+                <Image
+                  src={study.img}
+                  alt={study.title}
+                  width={768}
+                  height={282}
+                  className="shadow-lg"
+                />
+              </div>
+              <p className="-mt-4">{study.title}</p>
+              <Button label="Live Site" href={study.link} />
+            </div>
+          ))}
+        </div>
       </div>
+
+      {showCat && (
+        <div className="">
+          <CatRender handleCat={handleCat} />
+        </div>
+      )}
     </section>
   );
 };
