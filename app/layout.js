@@ -47,10 +47,12 @@ const mono = Cousine({
 
 export const metadata = {
   title: "Ajax Abernathy",
-  description: "Full Stack Engineer",
+  description:
+    "Full stack software engineer building things for screens—balancing functionality and aesthetics with a bias toward simplicity. I partner with designers to create thoughtful, brand-aligned websites that perform.",
   openGraph: {
     title: "Ajax Abernathy",
-    description: "Full Stack Engineer",
+    description:
+      "Full stack software engineer building things for screens—balancing functionality and aesthetics with a bias toward simplicity. I partner with designers to create thoughtful, brand-aligned websites that perform.",
     url: "https://ajaxabernathy.com",
     siteName: "Ajax Abernathy",
     images: [
@@ -65,7 +67,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ajax Abernathy",
-    description: "Full Stack Engineer",
+    description:
+      "Full stack software engineer building things for screens—balancing functionality and aesthetics with a bias toward simplicity. I partner with designers to create thoughtful, brand-aligned websites that perform.",
     images: ["https://ajaxabernathy.com/og-image.jpg"],
   },
 };
