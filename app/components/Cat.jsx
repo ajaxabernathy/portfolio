@@ -12,6 +12,7 @@ const CatRender = ({ handleCat }) => {
   const [currentAction, setCurrentAction] = useState(
     "Armature|0_Idle_Ragdoll_metarig_hewan1"
   );
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     const scene = new THREE.Scene();
@@ -61,6 +62,8 @@ const CatRender = ({ handleCat }) => {
           action.play();
         }
       });
+
+      setIsLoaded(true); // Set loaded after everything is ready
     });
 
     const animate = () => {
@@ -76,7 +79,7 @@ const CatRender = ({ handleCat }) => {
       renderer.dispose();
       mountRef.current?.removeChild(renderer.domElement);
     };
-  }, [currentAction]);
+  }, []);
 
   const switchAnimation = (name) => {
     if (name === currentAction) return;
@@ -104,20 +107,21 @@ const CatRender = ({ handleCat }) => {
 
       <button
         onClick={handleCat}
-        className={`fixed top-24 right-12 font-mono w-[5rem] bg-white text-black uppercase text-[16px] tracking-tight px-3 py-1 shadow-md hover:cursor-pointer`}
+        className={`fixed top-24 right-12 font-mono w-[5rem] bg-white text-black uppercase text-[16px] tracking-tight px-3 py-1 shadow-md cursor-pointer z-50`}
       >
         Close
       </button>
 
-      <div className="w-screen flex items-center justify-center animate-fade-in">
-        <div className="fixed bottom-24 md:bottom-48 flex bg-white shadow-md z-20 hover:cursor">
+      <div className="w-full flex items-center justify-center animate-fade-in">
+        <div className="fixed bottom-24 md:bottom-48 flex bg-white shadow-md z-20">
           {animations.map(({ label, name }) => (
             <button
               key={name}
               onClick={() => switchAnimation(name)}
-              className={`font-mono w-[5rem] uppercase text-[16px] tracking-tight px-3 py-1 ${
+              disabled={!isLoaded} // Disable until loaded
+              className={`font-mono w-[5rem] uppercase text-[16px] tracking-tight px-3 py-1 z-50 cursor-crosshair ${
                 currentAction === name ? "bg-black text-white" : ""
-              }`}
+              } ${!isLoaded ? "opacity-50 cursor-not-allowed" : ""}`} // Visual feedback
             >
               {label}
             </button>

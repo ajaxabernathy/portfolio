@@ -47,10 +47,10 @@ const mono = Cousine({
 
 export const metadata = {
   title: "Ajax Abernathy",
-  description: "Full Stack Engineer",
+  description: "Full Stack Software Engineer",
   openGraph: {
     title: "Ajax Abernathy",
-    description: "Full Stack Engineer",
+    description: "Full Stack Software Engineer",
     url: "https://ajaxabernathy.com",
     siteName: "Ajax Abernathy",
     images: [
@@ -65,7 +65,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ajax Abernathy",
-    description: "Full Stack Engineer",
+    description: "Full Stack Software Engineer",
     images: ["https://ajaxabernathy.com/og-image.jpg"],
   },
 };

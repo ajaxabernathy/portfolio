@@ -46,7 +46,7 @@ li {
 }
 
 .heading-serif {
-  @apply font-serif text-[32px] md:text-[36px] underline mb-16 md:mb-[2.5rem];
+  @apply font-serif text-[32px] md:text-[36px] mb-16 md:mb-[2.5rem];
 }
 
 .body {

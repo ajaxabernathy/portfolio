@@ -85,7 +85,7 @@ export default function Home() {
       </section>
       <section className="text-white w-full content-wrapper mt-[8rem] md:mt-[14rem]">
         <div className="site-grid-container body">
-          <h2 className=" heading-serif col-span-6">Skills & Services</h2>
+          <h2 className="heading-serif col-span-6">Skills & Services</h2>
           <div className="col-span-6">
             <div className="flex">
               <div className="w-1/2 flex flex-col">

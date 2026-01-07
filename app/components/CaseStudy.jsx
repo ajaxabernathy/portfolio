@@ -15,6 +15,12 @@ const studies = [
     img: "/sylvain.jpg",
   },
   {
+    title: "MOD Worldwide",
+    about: "Contributor",
+    link: "https://modworldwide.com/",
+    img: "/mod.jpg",
+  },
+  {
     title: "Xumo.com",
     about: "Contributor",
     link: "https://xumo.com",
@@ -27,16 +33,16 @@ const studies = [
     img: "/dod.jpg",
   },
   {
-    title: "HeadFirst from Philadelphia Union",
-    about: "Lead developer",
-    link: "https://myheadfirst.org",
-    img: "/puf.jpg",
-  },
-  {
     title: "Peacock Olympics Coverage",
     about: "Lead developer",
     link: "https://peacock-olympics.vercel.app/",
     img: "/peacock.jpg",
+  },
+  {
+    title: "HeadFirst from Philadelphia Union",
+    about: "Lead developer",
+    link: "https://myheadfirst.org",
+    img: "/puf.jpg",
   },
   {
     title: "Comcast Business Brand Hub",
@@ -83,7 +89,10 @@ const CaseStudy = () => {
             onClick={handleCat}
             className="absolute grid-break:static right-16 -top-32 grid-break:m-[12rem] size-24 md:size-32 cursor-pointer"
           >
-            <div className="rotate-12" ref={catRef}>
+            <div
+              className="rotate-12 hover:shadow-lg shadow-green"
+              ref={catRef}
+            >
               <Cat />
             </div>
             <p className="text-green font-serif uppercase mt-2">Cat!</p>
@@ -113,7 +122,7 @@ const CaseStudy = () => {
       </div>
 
       {showCat && (
-        <div className="">
+        <div>
           <CatRender handleCat={handleCat} />
         </div>
       )}
