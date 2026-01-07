@@ -33,7 +33,7 @@ export default function Home() {
             <p className="mb-12 md:mb-6 md:w-[80%] grid-break:w-[80%] font-light">
               Full stack software engineer building things for screens—balancing
               functionality and aesthetics with a bias toward simplicity. I
-              partner with designers to build thoughtful, brand-aligned
+              partner with designers to create thoughtful, brand-aligned
               websites&nbsp;that&nbsp;perform.
             </p>
             <p>
