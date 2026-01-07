@@ -46,7 +46,7 @@ li {
 }
 
 .heading-serif {
-  @apply font-serif text-[32px] md:text-[36px] underline mb-16 md:mb-[2.5rem];
+  @apply font-serif text-[32px] md:text-[36px] mb-16 md:mb-[2.5rem];
 }
 
 .body {
@@ -54,7 +54,7 @@ li {
 }
 
 .content-wrapper {
-  @apply p-[20px] lg:pl-[127px] lg:pr-[78px] max-w-[1920px];
+  @apply p-[10px] md:p-[20px] lg:pl-[127px] lg:pr-[78px] max-w-[1920px];
 }
 
 .site-grid-container {
@@ -69,5 +69,19 @@ li {
     -moz-column-gap: 2rem;
     column-gap: 2rem;
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
