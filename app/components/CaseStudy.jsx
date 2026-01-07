@@ -89,10 +89,7 @@ const CaseStudy = () => {
             onClick={handleCat}
             className="absolute grid-break:static right-16 -top-32 grid-break:m-[12rem] size-24 md:size-32 cursor-pointer"
           >
-            <div
-              className="rotate-12 hover:shadow-lg shadow-green"
-              ref={catRef}
-            >
+            <div className="rotate-12" ref={catRef}>
               <Cat />
             </div>
             <p className="text-green font-serif uppercase mt-2">Cat!</p>
