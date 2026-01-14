@@ -46,9 +46,13 @@ const mono = Cousine({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://ajaxabernathy.com'),
   title: "Ajax Abernathy",
   description:
     "Full stack software engineer building things for screens—balancing functionality and aesthetics with a bias toward simplicity. I partner with designers to create thoughtful, brand-aligned websites that perform.",
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: "Ajax Abernathy",
     description:
