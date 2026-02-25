@@ -9,6 +9,12 @@ import CatRender from "./Cat";
 
 const studies = [
   {
+    title: "Yume",
+    about: "Contributor",
+    link: "https://sweetyume.com",
+    img: "/yume.webp",
+  },
+  {
     title: "SYLVAIN Impact Report 2025",
     about: "Contributor",
     link: "https://impact.sylvain.co/2025",
@@ -102,13 +108,12 @@ const CaseStudy = () => {
               className="mb-16 md:mb-24 flex flex-col gap-8 mr-0 md:mr-4 grid-break:mr-0"
             >
               <p className="uppercase -mb-4">[{`0${i + 1}`}]</p>
-              <div className="w-full grid-break:w-[80%]">
+              <div className="w-full aspect-[674/380] relative grid-break:w-[80%]">
                 <Image
                   src={study.img}
                   alt={study.title}
-                  width={768}
-                  height={282}
-                  className="shadow-lg"
+                  fill
+                  className="object-cover shadow-lg"
                 />
               </div>
               <p className="-mt-4">{study.title}</p>
