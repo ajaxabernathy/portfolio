@@ -9,59 +9,54 @@ import CatRender from "./Cat";
 
 const studies = [
   {
-    title: "Yume",
-    about: "Contributor",
+    title: "YUME",
+    description: "Next.js, Motion, Sanity",
     link: "https://sweetyume.com",
     img: "/yume.webp",
   },
   {
     title: "SYLVAIN Impact Report 2025",
-    about: "Contributor",
+    description: "React, CSS",
     link: "https://impact.sylvain.co/2025",
     img: "/sylvain.jpg",
   },
   {
     title: "MOD Worldwide",
-    about: "Contributor",
+    description: "Next.js, Tailwind, Motion",
     link: "https://modworldwide.com/",
-    img: "/mod.jpg",
+    img: "/mod.webp",
   },
   {
-    title: "Xumo.com",
-    about: "Contributor",
+    title: "Xumo",
+    description: "Next.js, Motion, Directus, Oracle",
     link: "https://xumo.com",
-    img: "/xumo.jpg",
+    img: "/xumo.webp",
   },
-  {
-    title: "NAF Health Benefits",
-    about: "Lead developer",
-    link: "https://nafhealthplans.com",
-    img: "/dod.jpg",
-  },
-  {
-    title: "Peacock Olympics Coverage",
-    about: "Lead developer",
-    link: "https://peacock-olympics.vercel.app/",
-    img: "/peacock.jpg",
-  },
-  {
-    title: "HeadFirst from Philadelphia Union",
-    about: "Lead developer",
-    link: "https://myheadfirst.org",
-    img: "/puf.jpg",
-  },
-  {
-    title: "Comcast Business Brand Hub",
-    about: "Contributor",
-    link: "https://cbbrandguidelines.com",
-    img: "/cbbh.jpg",
-  },
-  {
-    title: "Xfinity Brand Hub",
-    about: "Contributor",
-    link: "https://brand.xfinity.com/",
-    img: "/xbh.jpg",
-  },
+];
+
+const studiesSmall = [
+  //   {
+  //     title: "NAF Health Benefits",
+  //     description: "Lead developer",
+  //     link: "https://nafhealthplans.com",
+  //     img: "/dod.jpg",
+  //   },
+  //   {
+  //     title: "Peacock Olympics Coverage",
+  //     about: "Lead developer",
+  //     link: "https://peacock-olympics.vercel.app/",
+  //     img: "/peacock.jpg",
+  //   },
+  //   {
+  //     title: "Comcast Business Brand Hub",
+  //     about: "Contributor",
+  //     link: "https://cbbrandguidelines.com",
+  //   },
+  //   {
+  //     title: "Xfinity Brand Hub",
+  //     about: "Contributor",
+  //     link: "https://brand.xfinity.com/",
+  //   },
 ];
 
 const CaseStudy = () => {
@@ -89,26 +84,26 @@ const CaseStudy = () => {
   return (
     <section className="relative w-full content-wrapper mt-[8rem] md:mt-[14rem]">
       <div className="site-grid-container body text-white">
-        <div className="col-span-6">
-          <h2 className="heading-serif">Work</h2>
+        <div className="col-span-12">
+          <h2 className="heading mb-12 uppercase">Recent Work</h2>
           <button
             onClick={handleCat}
-            className="absolute grid-break:static right-16 -top-32 grid-break:m-[12rem] size-24 md:size-32 cursor-pointer"
+            className="absolute right-16 grid-break:left-48 -top-32 grid-break:-top-72 size-24 grid-break:size-32 cursor-pointer"
           >
             <div className="rotate-12" ref={catRef}>
               <Cat />
             </div>
-            <p className="text-green font-serif uppercase mt-2">Cat!</p>
+            {/* <p className="text-green font-serif uppercase mt-2">Cat!</p> */}
           </button>
         </div>
-        <div className="col-span-6 grid md:grid-cols-2">
+        <div className="col-span-12 grid grid-break:grid-cols-2 gap-6 mb-24">
           {studies.map((study, i) => (
             <div
               key={"case_study_" + i}
-              className="mb-16 md:mb-24 flex flex-col gap-8 mr-0 md:mr-4 grid-break:mr-0"
+              className="mb-16 md:mb-24 flex flex-col"
             >
-              <p className="uppercase -mb-4">[{`0${i + 1}`}]</p>
-              <div className="w-full aspect-[674/380] relative grid-break:w-[80%]">
+              <p className="mb-6">[{`0${i + 1}`}]</p>
+              <div className="w-full aspect-[16/10] relative mb-6">
                 <Image
                   src={study.img}
                   alt={study.title}
@@ -116,7 +111,27 @@ const CaseStudy = () => {
                   className="object-cover shadow-lg"
                 />
               </div>
-              <p className="-mt-4">{study.title}</p>
+              <div className="flex w-full justify-between">
+                <div>
+                  <p className="">{study.title}</p>
+                  <p className="pt-4 font-light">{study.description}</p>
+                </div>
+                <Button label="Live Site" href={study.link} />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="w-full col-span-12 grid md:grid-cols-4 gap-6">
+          {studiesSmall.map((study, i) => (
+            <div
+              key={"case_study_" + i}
+              className="mb-16 md:mb-24 flex flex-col gap-8 col-span-1"
+            >
+              <p className="uppercase">[{`0${i + 5}`}]</p>
+              <div className=""></div>
+              <p className="mb-2">{study.title}</p>
+              <p className="mb-2">{study.description}</p>
               <Button label="Live Site" href={study.link} />
             </div>
           ))}
