@@ -10,7 +10,7 @@ const CatRender = ({ handleCat }) => {
   const mixerRef = useRef(null);
   const actionsRef = useRef({});
   const [currentAction, setCurrentAction] = useState(
-    "Armature|0_Idle_Ragdoll_metarig_hewan1"
+    "Armature|0_Idle_Ragdoll_metarig_hewan1",
   );
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -21,7 +21,7 @@ const CatRender = ({ handleCat }) => {
       75,
       window.innerWidth / window.innerHeight,
       0.1,
-      1000
+      1000,
     );
     camera.position.set(0, 1, 3);
 
@@ -113,7 +113,7 @@ const CatRender = ({ handleCat }) => {
       </button>
 
       <div className="w-full flex items-center justify-center animate-fade-in">
-        <div className="fixed bottom-24 md:bottom-48 flex bg-white shadow-md z-20">
+        <div className="fixed bottom-24 md:bottom-32 flex bg-white shadow-md z-20">
           {animations.map(({ label, name }) => (
             <button
               key={name}
