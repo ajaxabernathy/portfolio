@@ -39,7 +39,7 @@ export default function Home() {
             <p>
               <span className="font-light">Currently:</span> Full Stack
               Developer at{" "}
-              <a href="https://modworldwide.com" className="hover:text-red">
+              <a href="https://wearemodcreative.com" className="hover:text-red">
                 MOD
               </a>
             </p>
@@ -85,7 +85,11 @@ export default function Home() {
       </section>
       <section className="text-white w-full content-wrapper mt-[8rem] md:mt-[14rem]">
         <div className="site-grid-container body">
-          <h2 className="heading-serif col-span-6">Skills & Services</h2>
+          <div className="col-span-6">
+            <h2 className="heading uppercase max-w-[200px] mb-12">
+              Skills & Services
+            </h2>
+          </div>
           <div className="col-span-6">
             <div className="flex">
               <div className="w-1/2 flex flex-col">
@@ -97,6 +101,7 @@ export default function Home() {
                   <li>CSS</li>
                   <li>SQL</li>
                   <li>GraphQL</li>
+                  <li>GROQ</li>
                   <li>Shell/CLI</li>
                 </ul>
               </div>
@@ -118,11 +123,12 @@ export default function Home() {
               <p className="mb-6 uppercase">[Technologies]</p>
               <ul>
                 <li>Figma</li>
-                <li>CMS (Directus, Sanity, Strapi)</li>
+                <li>CMS (Sanity, Directus, Strapi)</li>
+                <li>Webflow</li>
                 <li>Webpack</li>
                 <li>Turbopack</li>
                 <li>Vercel</li>
-                <li>AWS (Lambda, EC2, DynamoDB, S3)</li>
+                <li>AWS (EC2, S3, Amplify, DynamoDB)</li>
                 <li>DigitalOcean (Droplets, App Platform)</li>
                 <li>NoSQL Databases</li>
                 <li>REST</li>

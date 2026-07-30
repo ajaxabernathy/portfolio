@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import PIL; print\\(PIL.__version__\\)\")",
+      "Bash(pip3 install *)",
+      "Bash(python3 -)",
+      "Bash(python3 -c \"import cairosvg; cairosvg.svg2png\\(url='/tmp/full.svg', write_to='/tmp/full.png', output_width=1800\\)\")",
+      "Bash(brew list *)",
+      "Bash(find /opt/homebrew -iname \"libcairo.2.dylib\" 2>/dev/null)",
+      "Read(//opt/homebrew/**)",
+      "Bash(DYLD_LIBRARY_PATH=/opt/homebrew/lib python3 -c \"import cairosvg; cairosvg.svg2png\\(url='/tmp/full.svg', write_to='/tmp/full.png', output_width=1800\\)\")",
+      "Bash(python3 -c \"import PIL; print\\('ok', PIL.__version__\\)\")",
+      "Read(//tmp/**)",
+      "Read(//private/tmp/**)",
+      "Bash(lsof -ti:3000 -sTCP:LISTEN)",
+      "Bash(curl -s http://localhost:3000/ -o /dev/null -w \"%{http_code}\\\\n\")",
+      "Bash(find / -maxdepth 6 -iname \"playwright\" -type d)",
+      "Bash(npm list *)"
+    ]
+  }
+}
